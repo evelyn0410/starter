@@ -30,6 +30,7 @@ pipeline {
                 script {
                     def scannerHome = tool 'SonarScanner';
                      withSonarQubeEnv(credentialsId:"SONAR_TOKEN", installationName:'sonarqube') {
+                      sh "./gradlew bootJar"
                       sh "${scannerHome}/bin/sonar-scanner"
                     }
                 }
