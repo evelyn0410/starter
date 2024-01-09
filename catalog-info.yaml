@@ -6,5 +6,5 @@ metadata:
     github.com/project-slug: evelyn0410/starter
 spec:
   type: other
-  lifecycle: unknown
+  lifecycle: experimental
   owner: guests
