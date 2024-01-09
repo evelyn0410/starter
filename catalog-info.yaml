@@ -4,7 +4,12 @@ metadata:
   name: starter
   annotations:
     github.com/project-slug: evelyn0410/starter
+    'jenkins.io/job-full-name': starter
+  links:
+    - url: https://github.com/evelyn0410/starter
+      title: GitHub Repo
+      icon: github
 spec:
-  type: other
+  type: service
   lifecycle: experimental
   owner: user:guest
