@@ -8,6 +8,7 @@ metadata:
     jenkins.io/job-full-name: admin:starter
     sonarqube.org/project-key: default/evelyn0410_starter
     nexus-repository-manager/docker.image-name: starter
+    argocd/app-name: starter
   links:
     - url: https://github.com/evelyn0410/starter
       title: GitHub Repo
