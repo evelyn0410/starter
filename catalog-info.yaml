@@ -6,7 +6,7 @@ metadata:
     github.com/project-slug: evelyn0410/starter
     backstage.io/managed-by-location: url:https://github.com/evelyn0410/starter/blob/main/catalog-info.yaml
     jenkins.io/job-full-name: admin:starter
-    sonarqube.org/project-key: default/starter
+    sonarqube.org/project-key: default/evelyn0410_starter
   links:
     - url: https://github.com/evelyn0410/starter
       title: GitHub Repo
