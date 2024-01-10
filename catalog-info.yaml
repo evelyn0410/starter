@@ -5,7 +5,7 @@ metadata:
   annotations:
     github.com/project-slug: evelyn0410/starter
     backstage.io/managed-by-location: url:https://github.com/evelyn0410/starter/blob/main/catalog-info.yaml
-    jenkins.io/job-full-name: starter
+    jenkins.io/job-full-name: admin:starter
   links:
     - url: https://github.com/evelyn0410/starter
       title: GitHub Repo
