@@ -3,6 +3,8 @@ kind: Config
 profiles:
   - name: dev                 # skaffold 실행시 -p로 정의된 profile
     build:
+      insecureRegistries:
+        - 192.168.41.50:5000
       local:
         push: true  # false는 로컬 테스트
       artifacts:
@@ -10,8 +12,9 @@ profiles:
           jib:
             args:
               - -DskipTests
-              - "-Djib.container.environment=SPRING_PROFILES_ACTIVE=dev"  # jib 플러그인을 통해 dev profile에 대해 수행
-            fromImage: library/openjdk:17-jdk-slim       # 실행을 위한 runtime image
+              - -DsendCredentialsOverHttp=true
+              - "-Djib.container.environment=SPRING_PROFILES_ACTIVE=dev -Djib.allowInsecureRegistries=true"
+            fromImage: openjdk:17-jdk-slim
     deploy:
       kustomize:
         paths:
