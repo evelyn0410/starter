@@ -4,9 +4,9 @@ profiles:
   - name: dev                 # skaffold 실행시 -p로 정의된 profile
     build:
       local:
-        push: false # false는 로컬 테스트
+        push: true  # false는 로컬 테스트
       artifacts:
-        - image: jei0486/starter # on dev server (docker hub에 push하고 실행)
+        - image: 192.168.41.50:5000/starter # on dev server (docker hub에 push하고 실행)
           jib:
             args:
               - -DskipTests
