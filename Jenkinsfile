@@ -5,7 +5,6 @@ pipeline {
         SOURCECODE_JENKINS_CREDENTIAL_ID = 'evelyn-git'
         SOURCE_CODE_URL = 'https://github.com/evelyn0410/starter.git'
         RELEASE_BRANCH = 'main'
-        REGISTRY = "192.168.41.50:5000"
     }
 
     stages {
@@ -29,7 +28,7 @@ pipeline {
         stage('Build') {
             steps {
                 script{
-                    docker.withRegistry("$REGISTRY","nexus-docker"){   //credential 이름이 jenkins에 등록된 이름과 동일해야 함, jenkins에 docker deploy 권한 필요
+                    docker.withRegistry("nexus-docker"){
                         sh "pwd"
                         sh "chmod u+x ./gradlew"
                         sh "skaffold build -p dev -t ${TAG}"
