@@ -11,7 +11,6 @@ metadata:
     nexus-repository-manager/docker.image-name: starter
     argocd/app-name: starter
     backstage.io/kubernetes-id: api-start
-    backstage.io/kubernetes-namespace: default
   links:
     - url: https://github.com/evelyn0410/starter
       title: GitHub Repo
