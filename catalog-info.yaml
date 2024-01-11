@@ -2,6 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: starter
+  description: starter api
   annotations:
     github.com/project-slug: evelyn0410/starter
     backstage.io/managed-by-location: url:https://github.com/evelyn0410/starter/blob/main/catalog-info.yaml
@@ -9,6 +10,8 @@ metadata:
     sonarqube.org/project-key: default/evelyn0410_starter
     nexus-repository-manager/docker.image-name: starter
     argocd/app-name: starter
+    backstage.io/kubernetes-id: api-start
+    backstage.io/kubernetes-namespace: default
   links:
     - url: https://github.com/evelyn0410/starter
       title: GitHub Repo
