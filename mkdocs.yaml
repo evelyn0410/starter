@@ -1,0 +1,12 @@
+site_name: starter-techdocs
+site_description: Contains the techdocs for starter
+repo_url: https://github.com/evelyn0410/starter
+edit_uri: edit/main/docs
+
+plugins:
+  - techdocs-core
+  - kroki
+
+# Note for content editors, edit only the section below
+# nav:
+#   - evelyn0410-starter-techdocs Documentation: index.md
