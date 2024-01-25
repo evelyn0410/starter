@@ -5,7 +5,6 @@ edit_uri: edit/main/docs
 
 plugins:
   - techdocs-core
-  - kroki
 
 # Note for content editors, edit only the section below
 # nav:
