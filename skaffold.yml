@@ -1,19 +1,15 @@
 apiVersion: skaffold/v2beta18
 kind: Config
 profiles:
-  - name: dev                 # skaffold 실행시 -p로 정의된 profile
+  - name: dev                
     build:
-      insecureRegistries:
-        - 192.168.41.50:5000
       local:
-        push: true  # false는 로컬 테스트
+        push: true
       artifacts:
-        - image: 192.168.41.50:5000/starter # on dev server (docker hub에 push하고 실행)
+        - image: docker.openmsa.monster/starter
           jib:
             args:
               - -DskipTests
-              - -DsendCredentialsOverHttp=true
-              - "-Djib.container.environment=SPRING_PROFILES_ACTIVE=dev -Djib.allowInsecureRegistries=true"
             fromImage: openjdk:17-jdk-slim
     deploy:
       kustomize:
