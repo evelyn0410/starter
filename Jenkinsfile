@@ -30,7 +30,7 @@ pipeline {
         stage('Build') {
             steps {
                 script{
-                    docker.withRegistry("nexus-docker-2"){
+                    docker.withRegistry('https://docker.openmsa.monster', "nexus-docker-2"){
                         sh "pwd"
                         sh "chmod u+x ./gradlew"
                         sh "skaffold build -p dev -t ${TAG}"
