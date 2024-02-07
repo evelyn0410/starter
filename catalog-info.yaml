@@ -4,13 +4,15 @@ metadata:
   name: starter
   description: starter for backstage
   annotations:
-    github.com/project-slug: evelyn0410/starter
     backstage.io/managed-by-location: url:https://github.com/evelyn0410/starter/blob/main/catalog-info.yaml
+    backstage.io/kubernetes-id: starter
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: evelyn0410/starter
     jenkins.io/job-full-name: starter
     sonarqube.org/project-key: default/evelyn0410_starter
     nexus-repository-manager/docker.image-name: starter
     argocd/app-name: starter
-    backstage.io/kubernetes-id: starter
+    
   links:
     - url: https://github.com/evelyn0410/starter
       title: GitHub Repo
